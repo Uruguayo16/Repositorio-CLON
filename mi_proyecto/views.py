@@ -2,6 +2,11 @@ from django.http import HttpResponse
 from datetime import datetime
 from django.template import loader
 from Aplicacion.models import Curso
+
+def muestra_nombre(request):
+    # Tu lógica aquí
+    return HttpResponse("Nombre mostrado")
+
 def saludo(request):
     return HttpResponse("Hola, mundo!")
 

@@ -1,0 +1,20 @@
+{% extends "AplicacionTemplates/padre.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="{% static 'AplicacionTemplates/css/estilo.css' %}" rel="stylesheet" />
+</head>
+<body>
+    <div class="contenedor">
+        {% block contenidoQueCambia %}
+        <h1 class="titulo">Registrar un nuevo curso</h1>
+        <a class="boton" href="{% url 'CursoFormulario' %}">Vamos!</a>
+        {% endblock %}
+    </div>
+</body>
+</html>

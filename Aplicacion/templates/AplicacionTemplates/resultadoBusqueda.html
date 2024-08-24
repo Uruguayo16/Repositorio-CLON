@@ -1,0 +1,25 @@
+{% extends "AplicacionTemplates/padre.html" %}  {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block contenidoQueCambia %}
+    <link href="{%static "registro/css/estilo.css"%}" rel="stylesheet"/>
+
+    <p class="titulo">Estamos buscando el cliente: {{ nombre }}</p> 
+
+    {% if clientes %}
+   <ul> {% for cliente in clientes %}
+        <li>{{ cliente.nombre}}</li>
+        <li>{{ cliente.telefono}}</li>
+        <li>{{ cliente.email}}</li>
+        {%endfor%}
+    </ul>
+    {% endif %}
+    {% endblock %} 
+</body>
+</html>
