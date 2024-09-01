@@ -1,0 +1,21 @@
+{% extends "AplicacionTemplates/index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    {% block contenidoQueCambia %}
+        <!-- Aquí va lo que cambia, y lo asociado a esta vista :) -->
+        <h1>Este es el título del Inicio que cambió</h1>
+        <p>Se ha heredado todo desde la plantilla padre</p>
+        <h3>En el hijo, inicio.html, casí no hay nada :)</h3>
+    {% endblock %}
+    
+</body>
+</html>

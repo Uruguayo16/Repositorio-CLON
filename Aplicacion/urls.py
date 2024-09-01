@@ -3,6 +3,7 @@ from Aplicacion import views
 from Aplicacion import views_clases
 
 
+<<<<<<< HEAD
 urlpatterns =   [
 
     
@@ -26,4 +27,20 @@ urls_vistas_clases = [
     path('clases/nuevo/', views_clases.CursoCreateView.as_view(), name='New'),
     path('clases/editar/<int:pk>', views_clases.CursoUpdateView.as_view(), name='Edit'),
     path('clases/eliminar/<int:pk>', views_clases.CursoDeleteView.as_view(), name='Delete')
+=======
+urlpatterns = [
+    
+    path('inicio/', views.inicio),
+    path('cursos/', views.cursos),    
+    path('profesores/', views.profesores),
+    path('estudiantes/', views.estudiantes),
+    path('entregables/', views.entregables),
+    path('curso-form/', views.curso_form), 
+    path('curso-form-2/', views.curso_form_2,name='CursoForm2'),
+    path('profesorFormulario/', views.profesorFormulario),
+    path ('buscar/', views.buscar),
+    path ('leer_Profesores/', views.leerProfesores),  
+    path ('eliminar_Profesor/ <profesor_nombre>/', views.eliminarProfesor), 
+    path ('editarProfesor/ <profesor_nombre>/',views.editarProfesor),
+>>>>>>> e61fa8e (Cambios)
 ]

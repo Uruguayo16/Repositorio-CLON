@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>¡Bienvenido a mi aplicación!</h1>
+
+    {% if cursos %}
+        <h2>Lista de Cursos:</h2>
+        <ul>
+            {% for curso in cursos %}
+                <li>{{ curso.nombre }} - Camada: {{ curso.camada }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay cursos disponibles.</p>
+    {% endif %}
+</body>
+</html>

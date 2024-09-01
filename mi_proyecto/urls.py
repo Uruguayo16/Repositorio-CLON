@@ -21,5 +21,10 @@ urlpatterns = [
     path('profesores/', views.profesores),
     path('estudiantes/', views.estudiantes),
     path('entregables/', views.entregables),
+<<<<<<< HEAD
     path('curso-form/', views.curso_form), 
+=======
+    path('inicio/curso-form/', views.curso_form), 
+    path('curso-form-2/', views.curso_form_2),
+>>>>>>> e61fa8e (Cambios)
 ]
